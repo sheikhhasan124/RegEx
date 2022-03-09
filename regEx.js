@@ -8,7 +8,20 @@ let myName = /[a-z].*[1-9]/.test(name);
 
 //two special case
 let twoSpeacial = /(?:[^`!@#$%^&*\-_=+'\/.,]*[`!@#$%^&*\-_=+'\/.,]){2}/.test('kievMosko@#')
-console.log(twoSpeacial)
+// console.log(twoSpeacial)
+
+
+// password length
+/* 
+criteria :
+8 characters length
+2 letters in Upper Case
+1 Special Character (!@#$&*)
+2 numerals (0-9)
+3 letters in Lower Case
+*/
+let passWord = /^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8}$/.test('AA#23asd')
+// console.log(passWord)
 
 
 /*........... 
